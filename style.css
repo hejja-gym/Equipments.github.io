@@ -1,0 +1,342 @@
+*{
+    margin:0; /* walang space */
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background-color:#f4f4f4;
+    scroll-behavior:smooth;
+}
+
+/* NAVIGATION BAR */
+.navbar{
+    background-color:#000;
+    padding:15px 30px;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+.nav-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:100%;
+}
+
+.logo{
+    color:#FFCC00; /* yellow - pinalitan namen */
+    font-size:24px;
+    font-weight:bold;
+}
+
+.nav-menu{
+    list-style:none;
+    display: flex;
+    gap:20px;
+}
+
+.nav-menu li a{
+    color:white;
+    text-decoration:none;
+    font-size:16px;
+}
+.nav-menu li a:hover{
+    color:#FFCC00;
+}
+
+/* HERO SECTON / / typo */
+.hero{
+    height:80vh;
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('https://scontent.fmnl43-1.fna.fbcdn.net/v/t1.15752-9/670867015_2206102923537289_8268949002947924708_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeEsGQl-3WjGtDiJXlUFUNsALoj0Pto4VFouiPQ-2jhUWkDoHxOIshpavCNeWKb33amJHS6cYe1h5VP8X89GhkAo&_nc_ohc=8v0aB8zahBYQ7kNvwENJuXX&_nc_oc=Adr0ciyMwrsqx1iblRHtT5mk7N19vZ7cFif2qS5zgqer6o17ymTtVK-w4WECFcoIsFg&_nc_zt=23&_nc_ht=scontent.fmnl43-1.fna&_nc_ss=7b2a8&oh=03_Q7cD5AGI42eozLfGx6QhemJdiEZgVmlRRNJan_9aBsTdz4JOuA&oe=6A1667DE');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content h2{
+    font-size:40px;
+    margin-bottom:15px;
+    text-shadow:2px 2px 4px #000;
+}
+
+.hero-content p{
+    font-size:18px;
+    margin-bottom:25px;
+}
+
+.btn-hero{
+    background:#FFCC00;
+    color:#000;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+    display:inline-block;
+}
+.btn-hero:hover{
+    transform:scale(1.05);
+}
+
+/* EQUIPMENT SECTON */
+.equipment-section{
+    padding:50px 20px;
+    background:white;
+}
+
+.section-title{
+    text-align:center;
+    font-size:32px;
+    margin-bottom:30px;
+    color:#000;
+}
+
+.equipment-container{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.product-card{
+    background:#f9f9f9;
+    padding:20px;
+    border-radius:8px;
+    width:280px;
+    text-align:center;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+.product-card:hover{
+    transform:translateY(-5px);
+}
+
+.product-card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:5px;
+}
+
+.product-card h3{
+    margin:15px 0 10px 0;
+    color:#000;
+}
+
+.price{
+    color:#FFCC00;
+    font-size:22px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+/* Buttons group - para tabi yung Add to Cart at Buy Now */
+.button-group{
+    display:flex;
+    gap:8px; /* space sa gitna */
+}
+
+.btn-cart{
+    background:#000;
+    color:white;
+    padding:10px 12px; /* ginawa namen maliit para kasya */
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    flex:1; /* hati sa space */
+    font-size:14px;
+}
+.btn-cart:hover{
+    background:#333;
+}
+
+/* Buy Now button - DAGDAG TO BRO */
+.btn-buy{
+    background:#FFCC00;
+    color:#000;
+    padding:10px 12px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-weight:bold;
+    flex:1; /* hati sa space */
+    font-size:14px;
+}
+.btn-buy:hover{
+    background:#FFB700;
+}
+
+/* FOUNDERS SECTON */
+.founders-section{
+    padding:50px 20px;
+    background:#f4f4f4;
+}
+
+.founders-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.founder-card{
+    text-align:center;
+    width:200px;
+}
+
+.founder-card img{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    border:3px solid #FFCC00;
+    object-fit:cover;
+}
+
+.founder-card h3{
+    margin:10px 0 5px 0;
+    color:#000;
+}
+
+.founder-card p{
+    color:#666;
+}
+
+/* SIGN UP SECTON */
+.signup-section{
+    padding:50px 20px;
+    background:white;
+}
+
+.signup-container{
+    max-width:450px;
+    margin:0 auto;
+}
+
+.signup-form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.signup-form label{
+    font-weight:bold;
+    color:#000;
+}
+
+.signup-form input{
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:5px;
+    font-size:14px;
+}
+
+.btn-submit{
+    background:#FFCC00;
+    color:#000;
+    padding:14px;
+    border:none;
+    border-radius:5px;
+    font-weight:bold;
+    font-size:16px;
+    cursor:pointer;
+    margin-top:10px;
+}
+.btn-submit:hover{
+    background:#FFB700;
+}
+
+/* PRIVACY SECTON */
+.privacy-section{
+    padding:50px 20px;
+    background:#f4f4f4;
+}
+
+.privacy-container{
+    max-width:800px;
+    margin:0 auto;
+    background:white;
+    padding:30px;
+    border-radius:8px;
+    line-height:1.6;
+}
+
+.last-updated{
+    color:#666;
+    font-style:italic;
+    margin-bottom:20px;
+}
+
+.privacy-container h3{
+    color:#FFCC00;
+    margin:25px 0 10px 0;
+    font-size:20px;
+}
+
+.privacy-container ul{
+    margin-left:20px;
+    margin-bottom:15px;
+}
+
+.privacy-container li{
+    margin-bottom:8px;
+}
+
+.disclaimer-box{
+    background:#fff3cd;
+    border-left:5px solid #FFCC00;
+    padding:15px;
+    margin-top:30px;
+    border-radius:5px;
+}
+
+/* FOOTER */
+.main-footer{
+    background:#000;
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+
+.main-footer h3{
+    color:#FFCC00;
+    font-size:24px;
+    margin-bottom:10px;
+}
+
+.tagline{
+    margin-bottom:20px;
+    color:#ccc;
+}
+
+.footer-links{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    margin-bottom:20px;
+    flex-wrap:wrap;
+}
+
+.footer-links a{
+    color:white;
+    text-decoration:none;
+}
+.footer-links a:hover{
+    color:#FFCC00;
+}
+
+.copyright{
+    color:#999;
+    font-size:14px;
+    margin-bottom:5px;
+}
+
+.project-note{
+    color:#FFCC00;
+    font-size:13px;
+    font-weight:bold;
+}
